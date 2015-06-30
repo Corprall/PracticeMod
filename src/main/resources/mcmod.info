@@ -1,0 +1,22 @@
+[
+{
+  "modid": "PracticeMod",
+  "name": "Practice Mod",
+  "description": "Totally didn't copy my mcmod.info from EE3",
+  "version": "${mod_version}",
+  "mcversion": "${minecraft_version}",
+  "url": "http://www.minecraftforum.net/topic/1106178-",
+  "updateUrl": "",
+  "authorList": [
+    "Corprall",
+    "OtherAuthor"
+  ],
+  "credits": "Some Text",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
