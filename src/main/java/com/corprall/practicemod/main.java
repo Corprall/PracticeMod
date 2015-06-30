@@ -1,15 +1,21 @@
 package com.corprall.practicemod;
 
+import com.corprall.practicemod.proxy.IProxy;
+import com.corprall.practicemod.references.Reference;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="PracticeMod", name="Practice Mod", version="1.7.10-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class main {
 
     @Mod.Instance("PracticeMod")
     public static main instance;
+
+    @SidedProxy(clientSide = "com.corprall.practicemod.proxy.ClientProxy", serverSide = "com.corprall.practicemod.proxy.ServerProxy")
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){}
